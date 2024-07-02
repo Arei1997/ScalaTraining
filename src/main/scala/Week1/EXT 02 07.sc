@@ -34,4 +34,7 @@ val firstletterUpper = firstLetter.capitalize
 
 
 
-
+val new = "Hello" // does not work
+// new is used to initialize objects so cannot be used as a variable name
+// try use newVal
+// cant use true, false, final, def, class, while, for
