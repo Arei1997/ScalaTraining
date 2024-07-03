@@ -11,7 +11,7 @@ val part_C = "cat" < "dog"
 val part_D = "Rabbit" < "Hamster"
 
 // Part E
-val part_E = 17 % 2 == 0
+val part_E = 17 % 2 == 1
 
 // Part F
 val part_F = 75 / 9 < 30 && 89 / 6 <20
