@@ -1,17 +1,26 @@
 package Week1.Friday
 
-class Animal(val age:Int, val name: String)
+class Animal(
 
-object Animal extends App {
+              val age:Int,
+              val name: String,
+              val diet: String
+            )
 
-  val Lion = new Animal(5,"David")
-  println(s"Animal: Name: ${Lion.name} || Age: ${Lion.age}")
+object Sanctuary extends App {
 
-  val dog = new Mammal("Brown",true)
-  println(s"Mammal: Fur Color - ${dog.furColor}, Has Tail - ${dog.hasTail}")
+  val lion = new Mammal(5, "Simba", "Gold", true, "Carnivore")
+  println(s"Animal: Name - ${lion.name}, Age - ${lion.age}, Fur Color - ${lion.furColor}, Has Tail - ${lion.hasTail}, Diet - ${lion.diet}")
 
-  val spider = new Insect(8)
-  println(s"Insect: Number Of Limbs - ${spider.numOfLimbs}")
+//  val dog = new Mammal("Brown",true,"Carnivore")
+//  println(s"Mammal: Fur Color - ${dog.furColor}, Has Tail - ${dog.hasTail}")
+//
+//  val spider = new Insect(8,"Omnivore")
+//  println(s"Insect: Number Of Limbs - ${spider.numOfLimbs}")
+//
+//  val penguin = new Bird(10, "Black","Herbivore")
+//  println(s"Bird: Beak Length - ${penguin.beakLength}, Feather Color - ${penguin.featherColor}")
+
 
 }
 
