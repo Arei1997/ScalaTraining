@@ -8,6 +8,14 @@ class Owl (
   val beakLength: Float,
   val featherColour: String
 
-  ) extends Bird with DietType{
+  ) extends Bird with DietType with Printable {
+
   val dietType: DietType = Herbivore
+
+  def printableDetails: String = {
+    s"name: $name, Age: $age, Can fly: $canFly, Wing Span: $wingSpan, Beak Length: $beakLength, Feather Colour: $featherColour, Diet Type: $dietType"
+  }
 }
+
+
+//val tripleAge = age * 3

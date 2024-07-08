@@ -6,7 +6,10 @@ class Warthog(
                val age: Int,
                val furColour: String,
                val hasTail: Boolean,
-               val dietType: DietType,
-               val hasTusks: Boolean
-             ) extends Mammal with DietType
+               val hasTusks: Boolean )  extends Mammal with DietType with Printable{
+
+    val dietType: DietType = Herbivore
+
+    def printableDetails: String = {s"Name: $name, Age: $age, Fur Colour: $furColour, Has Tail: $hasTail, Diet Type: $dietType, Has Tusks: $hasTusks"}
+}
 
