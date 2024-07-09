@@ -16,4 +16,5 @@ def printSeq(n:Int): Seq[Int] = {
   val index = 0 until n
   index.map(i => fibonacci(i))
 }
-printSeq(1).foreach(println)
+printSeq(7).foreach(println)
+printSeq(7).foreach(println)

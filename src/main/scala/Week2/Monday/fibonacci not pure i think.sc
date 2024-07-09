@@ -12,6 +12,7 @@
   }
 
 printSeq(5)
+ printSeq(5)
 
  //else statement calls itself recursively. fib(3)-fib(2) is computed again and recalculated repeatedly.
 

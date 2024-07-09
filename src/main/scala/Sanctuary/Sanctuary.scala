@@ -2,9 +2,9 @@ package Sanctuary
 
 object Sanctuary extends App {
 
-  val pumbaTheWarthog  = new Warthog("Pumba", 40,"Brown", true,true)
-  val JeffTheDragonfly = new Dragonfly("Jeff", 2, true,6,5.0f,5)
-  val OscarTheOwl      = new Owl("Oscar", 30, true, 16.0f, 7, "Brown")
+  val pumbaTheWarthog  = new Warthog(name = "Pumba", age = 40,furColour = "Brown", hasTail = true,hasTusks = true)
+  val JeffTheDragonfly = new Dragonfly(name = "Jeff", age = 2, canFly = true,numberOfLimbs = 6,wingSpan = 5.0f,antennaeLength = 5)
+  val OscarTheOwl      = new Owl(name = "Oscar", age = 30, canFly = true, wingSpan = 16.0f, beakLength = 7, featherColour = "Brown")
 
   def printAnimalDetails(animal: Printable): Unit = {
     println(animal.printableDetails)
