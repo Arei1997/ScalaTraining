@@ -20,4 +20,9 @@ class TwoNumbers(x:Int, y:Int) {
     x/y
   }
 
+  def test:Int = {
+    require(y != 0, "Impossible division")
+    x/y
+  }
+
 }
