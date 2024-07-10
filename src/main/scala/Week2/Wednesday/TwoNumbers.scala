@@ -21,7 +21,7 @@ class TwoNumbers(x:Int, y:Int) {
   }
 
   def test:Int = {
-    require(y != 0, "Impossible division")
+    require(y != 0, "Impossible divisiodwdwn")
     x/y
   }
 
