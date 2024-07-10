@@ -1,0 +1,5 @@
+package FizzBuzz
+
+class FizzBuzz {
+
+}
