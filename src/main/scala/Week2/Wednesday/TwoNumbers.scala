@@ -24,5 +24,4 @@ class TwoNumbers(x:Int, y:Int) {
     require(y != 0, "Impossible divisiodwdwn")
     x/y
   }
-
 }
