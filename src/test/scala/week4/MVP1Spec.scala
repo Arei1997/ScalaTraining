@@ -3,7 +3,7 @@ import week4._
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
 
-class EuroSpec extends AnyFlatSpec with Matchers {
+class MVP1Spec extends AnyFlatSpec with Matchers {
 
   "printTeams" should "return an empty string for an empty list" in {
     Euro.printTeams(List.empty) shouldEqual ""
