@@ -43,7 +43,8 @@ object Extension extends App {
 
 object Letter {
   def nameOrError(name:Name,postcode: Postcode): Either[genericPostageError, Letter] = {
-    val maybeName= nameOrError(name,postcode)
+    for {
+      name<- Name.nameOrError(nameStr)
   }
 
 }
