@@ -2,7 +2,6 @@ object Extension extends App {
 
   case class Name(value: String)
   case class Postcode(value: String)
-
   case class Letter(name: Name,postcode: Postcode)
 
   trait genericPostageError{
@@ -53,18 +52,16 @@ object Postcode {
     }
   }
 }
-  val testPostcode1 = "AB2 CD3"
-  val testPostcode2 = "88AA8A8A8"
 
-  Postcode.postcodeOrError(testPostcode2) match {
-    case Left(error) =>println(s"Error: ${error.message}")
-    case Right(postcode) => println(s"Valid postcode entered: ${postcode.value}")
+
+  object Name {
+    def nameOrError(maybeName:String):Either[invalidNameError,Name] ={
+      val digitCheck = ".*\\d.*".r
+      maybeName match{
+        case digitCheck() => Left(invalidNameError("Contains Numbers"))
+        case _ => Right(Name(maybeName))
+      }
+    }
   }
-
-  Postcode.postcodeOrError(testPostcode1) match {
-    case Left(error) =>println(s"Error: ${error.message}")
-    case Right(postcode) => println(s"Valid postcode entered: ${postcode.value}")
-  }
-
 
 }
