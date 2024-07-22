@@ -39,14 +39,14 @@ object Extension extends App {
     }
   }
 
-}
 
-object Letter {
-  def nameOrError(name:Name,postcode: Postcode): Either[genericPostageError, Letter] = {
-    for {
-      name<- Name.nameOrError(nameStr)
-  }
-
-}
+//
+//object Letter {
+//  def nameOrError(name:Name,postcode: Postcode): Either[genericPostageError, Letter] = {
+//    for {
+//      name<- Name.nameOrError(nameStr)
+//  }
+//
+//}
 }
 
