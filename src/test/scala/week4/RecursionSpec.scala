@@ -1,6 +1,6 @@
 package week4
 
-import Week4._
+import Week4.Monday.Recursion
 import org.scalatest.matchers.should.Matchers
 import org.scalatest.wordspec.AnyWordSpec
 
