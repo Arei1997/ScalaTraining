@@ -64,4 +64,13 @@ object Postcode {
     }
   }
 
+
+
+  object Letter {
+    def nameOrError(name:Name,postcode: Postcode): Either[genericPostageError, Letter] = {
+      val maybeName= nameOrError(name,postcode)
+    }
+
+  }
 }
+
