@@ -21,21 +21,11 @@ object Euro extends Enumeration {
     loop(teams, "")
   }
 
-  val allTeams = List(Germany, Spain, Italy, France, Portugal, Netherlands, England, Belgium, Croatia, Switzerland, Austria,
-    Hungary, Denmark, Czechia, Serbia, Scotland, Poland, Slovakia, Albania, Romania, Finland, Turkey,
-    Georgia, Slovenia)
-
-  println(printTeams(allTeams))
 
 }
 
 object Main extends App {
   import Euro._
+//  println(printTeams(printTeams().teams.toList))
 
-  val allTeams = List(Germany, Spain, Italy, France, Portugal, Netherlands, England, Belgium, Croatia, Switzerland, Austria,
-    Hungary, Denmark, Czechia, Serbia, Scotland, Poland, Slovakia, Albania, Romania, Finland, Turkey,
-    Georgia, Slovenia)
-
-  // Print teams
-  println(printTeams(allTeams))
 }
