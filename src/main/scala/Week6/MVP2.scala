@@ -8,8 +8,8 @@ def ToLowerCase(input: String): String = {
 }
 
 
-def convertString(makeStringUpperCase: Boolean, input: String): String = {
-  if (makeStringUpperCase) {
+def convertString(UpperCaseString: Boolean, input: String): String = {
+  if (UpperCaseString) {
     ToUpperCase(input)
   } else {
     ToLowerCase(input)
